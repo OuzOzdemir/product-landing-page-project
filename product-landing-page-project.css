@@ -1,0 +1,305 @@
+/*Main Adjustments of the page starts*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: courier new, helvetica, verdana;
+}
+
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    width: auto !important;
+    overflow-x: hidden !important;
+  }
+}
+
+body {
+  background-image: url("https://i.imgur.com/ryWW0aT.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 0px;
+}
+/*Main Adjustments of the page ends*/
+/*header starts*/
+#header {
+  padding: 0px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  font-size: 20px;
+  background-color: #ffffff;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #header {
+    position: initial;
+  }
+}
+
+/*logo starts*/
+#header-img {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+/*logo ends*/
+/*nav starts*/
+nav {
+  width: 100%;
+  padding-top: 30px;
+}
+
+#nav-bar ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #nav-bar ul {
+    margin-left: 50px;
+    display: block;
+    list-style: none;
+  }
+}
+
+ul li {
+  margin-right: 80px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 600px) {
+  ul li {
+    border: 2px solid #8b4513;
+    border-radius: 10%;
+    margin-top: 2px;
+    font-size: 15px;
+    text-align: center;
+    padding: 1px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #8b4513;
+}
+
+a:hover {
+  color: black;
+}
+/*nav ends*/
+/*header ends*/
+
+/*features starts*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  font-size: 16px;
+  width: 33.33%;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .column {
+    margin-top: 0px;
+    width: 100%;
+  }
+}
+
+#beans-bag-roast {
+  display: flex;
+  margin: auto;
+  overflow: hidden;
+}
+
+.textindiv {
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .textindiv {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    letter-spacing: normal;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+/*features ends*/
+
+/*product starts*/
+.roast {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 15%;
+}
+
+.roast > iframe {
+  max-width: 600px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .roast {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+}
+/*product ends*/
+
+/*pricing starts*/
+#pricing {
+  display: flex;
+  margin: auto;
+  width: 50%;
+  margin-top: 70px;
+  padding: 10px;
+}
+
+.pricing-p {
+  display: flex;
+  margin: auto;
+}
+
+.loadedcoffee {
+  border: 2px solid #8b4513;
+  border-radius: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .loadedcoffee {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+  }
+}
+/*pricing ends*/
+
+/*invitation starts*/
+section {
+  padding-top: 70px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: auto;
+  width: 70%;
+  text-align: justify;
+}
+
+#articlelast h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  #articlelast h2 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#email {
+  height: 30px;
+  width: 50%;
+  text-align: center;
+  border: 2px solid #8b4513;
+  border-radius: 20px 0px;
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #email {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+#submit {
+  height: 40px;
+  width: 30%;
+  margin-top: 10px;
+  border: 2px solid #8b4513;
+  border-radius: 20px 0px;
+  background-color: white;
+  color: #8b4513;
+  font-weight: 900;
+  outline: none;
+}
+
+.buttonorder {
+  display: block;
+  margin: auto;
+  width: 20%;
+  height: 40px;
+  border: 2px solid #8b4513;
+  border-radius: 20px 0px;
+  background-color: white;
+  color: #8b4513;
+  font-weight: 900;
+  outline: none;
+}
+
+.buttonorder:hover {
+  border: 5px solid #8b4513;
+  font-size: 20px;
+  border-radius: 20px 0px;
+  color: #8b4513;
+}
+/*invitation ends*/
+
+/*footer starts*/
+footer {
+  margin-top: 100px;
+  background-color: white;
+  padding: 2px;
+}
+
+footer > ul {
+  display: flex;
+  list-style: none;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  footer > ul > li {
+    border: none;
+    margin-right: 5px;
+    display: block;
+    list-style: none;
+  }
+}
+/*footer ends*/
